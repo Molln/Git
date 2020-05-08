@@ -31,7 +31,7 @@ git push [别名] [分支名]
 ### 五 克隆
 
 ````
-git origin [远程地址]
+git clone [远程地址]
 ````
 
 * 完整的将远程库下载到本地
@@ -42,10 +42,22 @@ git origin [远程地址]
 
 ### 七 拉取
 
+````
+git pull 
+````
+
 pull=fetch+merge
 git fetch [远程库地址别名] [远程分支名]
 git merge [远程库地址别名/远程分支名]
 git pull [远程库地址别名] [远程分支名]
+
+**提示：fatal:refusing to merge unrelated histories**
+
+````
+git pull --allow-unrelated-histories
+````
+
+<https://blog.csdn.net/u012145252/article/details/80628451>
 
 ### 八 冲突解决
 
