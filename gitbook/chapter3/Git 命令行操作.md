@@ -219,3 +219,10 @@ git merge [有修改的分支]
 * git commit -m "提交说明"
 
   此时 commit 一定不能带具体文件名
+
+##### （6）删除分支
+
+````
+git branch -D hot_fix
+````
+

@@ -27,6 +27,28 @@ git remote add [别名] [远程地址]
 ````
 git push [别名] [分支名]
 ````
+**问题**
+
+````
+$ git push git_github_http master
+To https://github.com/Molln/Git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Molln/Git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+````
+
+**解决方案**
+
+* 1 强制 push
+
+  ````
+  git push git_github_http master -f
+  ````
+
+* 2 先执行 pull
 
 ### 五 克隆
 
@@ -43,21 +65,24 @@ git clone [远程地址]
 ### 七 拉取
 
 ````
-git pull 
+git pull
 ````
 
 pull=fetch+merge
+
 git fetch [远程库地址别名] [远程分支名]
+
 git merge [远程库地址别名/远程分支名]
+
 git pull [远程库地址别名] [远程分支名]
 
-**提示：fatal:refusing to merge unrelated histories**
+**提示：fatal：refusing to merge unrelated histories**
 
 ````
 git pull --allow-unrelated-histories
 ````
 
-<https://blog.csdn.net/u012145252/article/details/80628451>
+<https://blog.csdn.net/zhangkui0418/article/details/82977519>
 
 ### 八 冲突解决
 
