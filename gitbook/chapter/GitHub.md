@@ -98,6 +98,8 @@ Fork
 
 ### 十 SSH 登录
 
+单人使用
+
 #### 1 进入当前用户的家目录
 
 ````
@@ -113,7 +115,7 @@ $ rm -rvf .ssh
 #### 3 运行命令生成.ssh 密钥目录
 
 ````
-$ ssh-keygen -t rsa -C atguigu2018ybuq@aliyun.com
+$ ssh-keygen -t rsa -C 519843007@qq.com
 ````
 
 [注意：这里-C 这个参数是大写的 C]
@@ -133,7 +135,7 @@ $ cat id_rsa.pub
 
 #### 6 GitHub 设置
 
-复制 id_rsa.pub 文件内容，登录 GitHub，点击用户头像→Settings→SSH and GPG keys New SSH Key 输入复制的密钥信息
+复制 id_rsa.pub 文件内容，登录 GitHub，点击用户头像→Settings→SSH and GPG keys→New SSH Key 输入复制的密钥信息
 
 #### 7 回到 Git bash 创建远程地址别名
 
