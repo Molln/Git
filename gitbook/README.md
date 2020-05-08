@@ -1,5 +1,3 @@
 # Introduction
 
 ![](img/Outline.png)
-
->>>>>>
