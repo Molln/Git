@@ -115,7 +115,7 @@ $ rm -rvf .ssh
 #### 3 运行命令生成.ssh 密钥目录
 
 ````
-$ ssh-keygen -t rsa -C 519843007@qq.com
+$ ssh-keygen -t rsa -C 51984****@qq.com
 ````
 
 [注意：这里-C 这个参数是大写的 C]
@@ -140,7 +140,7 @@ $ cat id_rsa.pub
 #### 7 回到 Git bash 创建远程地址别名
 
 ````
-git remote add origin_ssh git@github.com:atguigu2018ybuq/huashan.git
+git remote add git_github_ssh git@github.com:Molln/Git.git
 ````
 
 
