@@ -86,9 +86,7 @@ git pull --allow-unrelated-histories
 
 ### 八 冲突解决
 
-如果不是基于 GitHub 远程库的最新版所做的修改，不能推送，必须先拉
-取。
-拉取下来后如果进入冲突状态，则按照“分支冲突解决”操作解决即可。
+如果不是基于 GitHub 远程库的最新版所做的修改，不能推送，必须先拉取。拉取下来后如果进入冲突状态，则按照“分支冲突解决”操作解决即可。
 
 ### 九 跨团队协作
 
@@ -99,6 +97,8 @@ Fork
 * 团对1 审核并合并代码
 
 ### 十 SSH 登录
+
+单人使用
 
 #### 1 进入当前用户的家目录
 
@@ -115,7 +115,7 @@ $ rm -rvf .ssh
 #### 3 运行命令生成.ssh 密钥目录
 
 ````
-$ ssh-keygen -t rsa -C atguigu2018ybuq@aliyun.com
+$ ssh-keygen -t rsa -C 51984****@qq.com
 ````
 
 [注意：这里-C 这个参数是大写的 C]
@@ -135,12 +135,12 @@ $ cat id_rsa.pub
 
 #### 6 GitHub 设置
 
-复制 id_rsa.pub 文件内容，登录 GitHub，点击用户头像→Settings→SSH and GPG keys New SSH Key 输入复制的密钥信息
+复制 id_rsa.pub 文件内容，登录 GitHub，点击用户头像→Settings→SSH and GPG keys→New SSH Key 输入复制的密钥信息
 
 #### 7 回到 Git bash 创建远程地址别名
 
 ````
-git remote add origin_ssh git@github.com:atguigu2018ybuq/huashan.git
+git remote add git_github_ssh git@github.com:Molln/Git.git
 ````
 
 
